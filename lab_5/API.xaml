@@ -1,0 +1,36 @@
+﻿<Window x:Class="lab_5.API"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:CefSharp="clr-namespace:CefSharp.Wpf;assembly=CefSharp.Wpf"
+        xmlns:local="clr-namespace:lab_5"
+        mc:Ignorable="d"
+        Title="API" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="62.006"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBox x:Name="inputTextBox" Grid.Row="0" Grid.Column="0" AllowDrop="True"></TextBox>
+        <Border Grid.Row="1" Grid.RowSpan="5" Grid.ColumnSpan="3" BorderBrush="Gray" BorderThickness="0,1">
+            <ScrollViewer VerticalScrollBarVisibility="Auto" >
+                <TextBox x:Name="textBox"></TextBox>
+            </ScrollViewer>
+        </Border>
+        <Button Grid.Column="0" Grid.Row="7" Click="Button_Click" >Показать данные пользователя</Button>
+        <Button Grid.Column="1" Grid.Row="7" Click="Button_Click_1" >Показать 10 самых часто играемых карт</Button>
+        <Button Grid.Column="2" Grid.Row="7" Click="Button_Click_2" >Посмотреть карту</Button>
+
+    </Grid>
+</Window>
